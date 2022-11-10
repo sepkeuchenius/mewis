@@ -9,11 +9,13 @@ body{
 h1{
     font-size:100px;
     color:white;
+    margin:0;
 }
 .hero {
     display: flex;
     justify-content: center;
     width:100%;
+    padding-top:50px;
     /* padding:100px; */
     /* text-align: center; */
 }
@@ -60,10 +62,16 @@ nav a {
    margin: 3px; 
 }
 #pages {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .page {
     margin: 50px 0;
     border-left: 2px solid orange;
     padding: 0 20px;
+    max-width: 700px;
+}
+#subhero {
+    /* color:white; */
+    font-size:20px;
+    max-width:1000px;
 }

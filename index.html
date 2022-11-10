@@ -3,12 +3,69 @@
 <head>
     <meta charset='utf-8'>
     <title>Public Speaking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    Public Speaking Walk Rotterdam
+    <nav>
+        <a class="page-link">Contact</a>
+        <a class="page-link">Why Public speaking</a>
+        <a class="page-link">Mewis</a>
+        <a class="page-link">Reviews</a>
+    </nav>
+    <main>
+
+        <div class="hero">
+            <h1 id="title">
+                Public Speaking Walk Rotterdam
+            </h1><br>
+        </div>
+        <button class="active-button">Mail mij</button>
+        <div id="pages">
+
+            <div class="page" id="why-public-speaking">
+                <h3>
+                    Why public speaking
+                </h3>
+                <p>
+                    I am so phucking interested in all this shit
+                </p>
+            </div>
+            <div class="page" id="mewis">
+                <h3>
+                    Mewis
+                </h3>
+                <p>
+                    That's me..
+                </p>
+            </div>
+            <div class="page" id="reviews">
+                <h3>
+                    Reviews
+                </h3>
+                <p>
+                    People think I am great
+                </p>
+            </div>
+            <div class="page" id="contact">
+                <h3>
+                    Contact
+                </h3>
+                <p>
+                    Get in touch now
+                </p>
+            </div>
+        </div>
+    
+    </main>
+
+    <br>    
 
     Paar zinnen pakkende korte uitleg
 
@@ -30,6 +87,32 @@
 
     Bovenaan mail? CTA?
 
+<script>
+    function init_footprint(){
+        const start_x = 100;
+        const start_y = 100;
+        element = $('<img>')
+        element.attr("src", "foot.png")
+        element.addClass("foot");
+        element.position(start_x, start_y)
+        $('body').append(element)
+        // footprint(element, start_x, start_y, 0)
+        window.setTimeout(function(){footprint(element, start_x, start_y, 0)},200)
+    }
+    function footprint(element, x,y, direction){
+        var step_distance = 10;
+        var direction = Math.random() * 90 - direction;
+        var x = Math.sinh(direction) / step_distance;
+        var y = Math.cosh(direction) / step_distance;
+        element.position(x,y);
+        window.setTimeout(function(){footprint(element, x, y, direction)},200   )
+        //calc direction
+        //random new direction (no more than 90 degrees of)
+        //calc dx xy
+        //apply nx ny to elements
+        //call new function with new parameters
+    }   
 
+</script>
 </body>
 </html>

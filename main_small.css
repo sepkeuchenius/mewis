@@ -9,6 +9,11 @@
         text-align: center;
         width:100%;
         left:0;
+        background-color: inherit;
+        box-sizing: border-box;
+        top: 0;
+        padding-top: 12px;
+        padding-bottom: 16px;
     }
     .page {
         width: 100%;

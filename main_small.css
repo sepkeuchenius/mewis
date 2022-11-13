@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     main {
-        padding: 5%;
+        padding: 3%;
     }
     h1{
         font-size: 50px;
@@ -11,6 +11,21 @@
         left:0;
     }
     .page {
-        width: 80%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        height: auto;
     }
+    #public-speaking-rotterdam{
+        background-image: url("public_speaking_mobile.jpg");
+    }
+    #public-speaking-rotterdam p{
+        margin: 0;
+    }
+    .page p {
+        background-color: transparent;
+        font-size:15px;
+        padding:0;
+    }
+
 }

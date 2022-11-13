@@ -1,3 +1,6 @@
+* {
+    background-repeat: no-repeat;
+}
 body{
     font-family: 'Raleway', sans-serif;
     background-color: rgb(147 188 225);
@@ -33,10 +36,10 @@ main {
     position: absolute;
     opacity: 0.8;
 }
-.right {
+/* .right {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-}
+} */
 .active-button {
     background-color: rgb(201, 254, 255);
     outline: none;
@@ -70,17 +73,22 @@ nav a {
 }
 .page {
     margin: 20px 0;
-    max-width: 700px;
-    width: 700px;
+    height: 200px;
+    border-radius: 10px;;
+    padding:30px;
+    /* max-width: 700px; */
+    /* width: 700px; */
 }
-.page:nth-child(odd){
+.left{
     /* border-left: 20px solid white; */
     float: left;
+    padding-right: 300px;
 }
-.page:nth-child(even){
+.right{
     /* border-right: 20px solid white; */
     float: right;
     text-align: right;
+    padding-left: 300px;
 }
 #subhero {
     /* color:white; */
@@ -96,5 +104,33 @@ nav a {
 }
 .page h3{
     margin-top: 10px;
-    font-size:25px;
+    font-size:30px;
+}
+.page p {
+    font-weight: 500;
+    font-size:18px;
+    padding:20px;
+    background-color: #ffc65e;
+    border-radius: 30px;
+    color:white;
+}
+#speaking {
+    width:1070px;
+    border-radius:30px;
+    position: absolute;
+    z-index:-1;
+    filter: grayscale(1)
+
+}
+#public-speaking-rotterdam {
+    background-image: url("public_speaking_low_sat.jpg");
+    background-size: 100% auto;
+    background-position: 0 50%;
+    color:white;
+    height: auto;
+    /* padding-top:200px; */
+    
+}
+#public-speaking-rotterdam p{
+    margin-top:300px;
 }

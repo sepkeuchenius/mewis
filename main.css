@@ -1,7 +1,7 @@
 body{
     font-family: 'Raleway', sans-serif;
-    background-color: rgb(98, 165, 224);
-    color:#4b4545;
+    background-color: rgb(147 188 225);
+    color:#343333;
 }
 h1{
     font-size:100px;
@@ -56,30 +56,29 @@ nav{
     right:20px;
 }
 nav a {
-   color:rgb(74, 74, 133);
+   color:inherit;
    outline:none;
    text-decoration: none;
-   border-bottom: 2px solid orange;
+   border-bottom: 3px solid white;
    padding: 3px 0;
    margin: 3px; 
 }
 #pages {
     margin-top: 100px;
     display: block;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 .page {
     margin: 20px 0;
-    padding: 0 20px;
     max-width: 700px;
     width: 700px;
 }
 .page:nth-child(odd){
-    border-left: 2px solid orange;
+    /* border-left: 20px solid white; */
     float: left;
 }
 .page:nth-child(even){
-    border-right: 2px solid orange;
+    /* border-right: 20px solid white; */
     float: right;
     text-align: right;
 }
@@ -94,4 +93,8 @@ nav a {
     margin: 40px 0;
     max-width:100%;
     z-index:-1
+}
+.page h3{
+    margin-top: 10px;
+    font-size:25px;
 }

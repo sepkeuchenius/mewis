@@ -108,11 +108,12 @@ nav a {
 }
 .page p {
     font-weight: 500;
-    font-size:18px;
+    font-size:15px;
     padding:20px;
-    background-color: #ffc65e;
+    /* background-color: #ffc65e; */
+    background-color: #f6f2d4;
     border-radius: 30px;
-    color:white;
+    color:#343333;
 }
 #speaking {
     width:1070px;
@@ -123,9 +124,9 @@ nav a {
 
 }
 #public-speaking-rotterdam {
-    background-image: url("public_speaking_low_sat.jpg");
+    background-image: url("mewis.png");
     background-size: 100% auto;
-    background-position: 0 50%;
+    background-position: 0 70%;
     color:white;
     height: auto;
     /* padding-top:200px; */

@@ -21,6 +21,8 @@
         <a class="page-link">Reviews</a>
     </nav>
     <main>
+        <img src="dutch.svg" onclick="toggleLanguage()" class="english language-button">
+        <img src="english.svg" onclick="toggleLanguage()" class="dutch language-button">
 
         <div class="hero">
             <h1 id="title">
@@ -30,10 +32,22 @@
         <img src="Rotterdam.svg" id="skyline">
 
         <p id="subhero">
-            Looking for a highly entertaining, informative and inspiring event for your team, colleagues or students? Public Speaking Walk gives you insights in the art of public speaking while seeing the beauty of Rotterdam. 
+            <span class="english">
+                Looking for a highly entertaining, informative and inspiring event for your team, colleagues or students? Public Speaking Walk gives you insights in the art of public speaking while seeing the beauty of Rotterdam.  
+            </span>
+            <span class="dutch">
+                Op zoek naar een vermakelijk, informatief en inspirerend evenement voor uw team, collega's of studenten? Public Speaking Walk geeft je inzicht in de kunst van public speaking terwijl je Rotterdam op zijn mooist ervaart.
+            </span>
         </p>
         <br>
-        <button class="active-button">Book Me</button>
+        <button class="active-button">
+            <span class="english">
+                Book Me
+            </span>
+            <span class="dutch">
+                Boek mij
+            </span>
+            </button>
         <br>
 
         <div id="pages">
@@ -44,62 +58,191 @@
                     Public Speaking x Rotterdam
                 </h3>
                 <p>
-                    Public Speaker Mewis Breij will guide you through Rotterdam within 3 hours.
-                    He will tell the story of Rotterdam, but he will mainly speak about speaking. 
-                    Rotterdam will serve as an example. 
-                    He will use these stories to put his public speaking lessons into practice. 
-                    <!-- He will also lead by example: (showing you how to do it//) and letting you rethink your communication. 
-                    In this fun event you will gain perspective in to what’s out there to learn when it comes to public speaking. -->
+                    <span class="english">
+                        I, Mewis Breij, will guide you through Rotterdam in 2-3 hours. I will tell the story of Rotterdam, but I will mainly speak about speaking. I will use these Rotterdam stories to put public speaking lessons into practice. In this fun event you will gain perspective into what’s out there to learn when it comes to public speaking. 
+                    </span>
+                    <span class="dutch">
+                        Ik, Mewis Breij, loods je in 2-3 uur door Rotterdam. Ik zal het verhaal van Rotterdam vertellen, maar ik zal vooral spreken over spreken. Deze Rotterdamse verhalen gebruik ik om de spreeklessen in de praktijk te brengen. In dit vermakelijke evenement krijg je inzicht in wat er te leren valt als het gaat om spreken in het openbaar.
+                    </span>
                 </p>
             </div>
             <div class="page right" id="whypublic-speaking">
                 <h3>
-                    Why Public Speaking?
+                    <span class="english">
+                        Why Public Speaking Walk?
+                    </span>
+                    <span class="dutch">
+                        Waarom Public Speaking Walk?
+                    </span>
                 </h3>
                 <p>
-                    <!-- Public speaking walk exists to show you the countless ways to speak with more impact.  -->
-                    This event inspires you to see the importance of how to tell instead of what to tell. 
-                    Ideas are only as good as the actions that follow the communication of these ideas. 
-                    And as a good speaker understands: Inspiration and entertainment should walk together. 
-                    Surroundings matter. 
-                    That’s why the dynamic city of Rotterdam is our décor. 
+                    <span class="english">
+                        Public Speaking Walk exists to show you the countless ways to speak with more impact.
+                        This event inspires you to zoom in more often on how to tell instead of only on what to tell. Ideas are only as good as the actions that follow the communication of these ideas. And as a good speaker understands: Inspiration and entertainment should walk together. Surroundings matter. That’s why the dynamic city of Rotterdam is our décor.
+                    </span>
+                    <span class="dutch">
+                        Public Speaking Walk bestaat om je de talloze manieren te laten zien om met meer impact te spreken.  
+                        Dit evenement inspireert je om vaker te focussen op overtuigend overdragen in plaats van alleen op de inhoud. Ideeën zijn slechts zo goed als de acties die voortvloeien uit de communicatie van deze ideeën. En zoals een goede spreker begrijpt: Inspiratie en entertainment horen samen te gaan. Omgeving telt. Daarom is de dynamische stad Rotterdam ons decor. 
+                    </span>
                 </p>
             </div>
             <div class="page left" id="mewis">
                 <h3>
-                    Mewis
+                    <span class="english">
+                        Mewis Breij - Passionate Speaker, Speaking coach, guide.
+                    </span>
+                    <span class="dutch">
+                        Mewis Breij - Gepassioneerde spreker, Coach, gids.
+                    </span>
                 </h3>
                 <p>
-                    Not long after I figured out I loved learning and reading, I fell on my head. 
-                    I acquired a brain injury, only a few months after I started studying. 
-                    My life slowed down, but my self-development journey got up to fifth gear. 
-                    I loved reading and writing, but my eyes were weak. Looking for a way out, I inadvertently developed a passion for speaking. 
-                    I listened to hundreds of books, hundreds of podcasts and even more TED Talks. 
-                    I have been studying and practicing by giving tours and lectures to thousands of people. 
-                    By the end of your Public Speaking Walk I invoked some of my passion for speaking with impact in you/hope that you copied even the slightest bit of my passion for speaking with impact. 
+                    <span class="english">
+                        Not long after I figured out I loved learning and reading, I fell on my head. I acquired a brain injury, only a few months after I started studying. My life slowed down, but my self-development journey got up to fifth gear. I loved reading and writing, but my eyes were weak. I listened to hundreds of books, hundreds of podcasts and even more TED Talks. I inadvertently developed a passion for speaking. I have been studying and practicing by giving tours and lectures to thousands of people. The purpose of the Public Speaking Walk is to invoke some of my passion in you. 
+                    </span>
+                    <span class="dutch">
+                        Ik had net ontdekt hoeveel ik van leren en lezen houdt, wanneer ik op m’n hoofd viel. Ik kreeg de diagnose niet-aangeboren hersenletsel. Mijn leven vertraagde, maar mijn zelfontwikkeling bereikte de hoogste versnelling. Ik hou van lezen en schrijven, maar mijn ogen konden niet veel aan. Ik luisterde naar honderden boeken, honderden podcasts en honderden TED talks. Zo ontwikkelde ik de afgelopen jaren een passie voor spreken. Ik heb gestudeerd en geoefend aan de hand van het geven van honderden tours en colleges. Het doel van Public Speaking Walk is om wat van mijn passie aan te wakkeren bij jou. 
+                    </span>
                 </p>
-            </div>
-            <div class="page right" id="reviews">
-                <h3>
-                    Reviews
-                </h3>
-                <p>
-                    People think I am great
-                </p>
-            </div>
-            <div class="page left" id="contact">
-                <h3>
-                    Contact
-                </h3>
-                <p>
-                    Get in touch now
-                </p>
-            </div>
+            </div>     
         </div>
-    
     </main>
+    <h3 style="text-align: center;">
+        Reviews
+    </h3>
+    <div id="reviews">
+        
+        <div class="review">
+            <h4 class="reviewer-name">
+                Sonia
+            </h4>
+            <p class="review-text">
+                Great speaker, which has a funny way to entertain the audience. Despite the cold weather, the time past fast as we were captivate by his stories.
+            </p>
+        </div>
 
-    <br>    
+        <div class="review">
+            <h4 class="reviewer-name">
+                Aishameriane
+            </h4>
+            <p class="review-text">
+                Mewis has true passion for public speaking and engage the group in a very nice walk through Rotterdam.
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Sonny
+            </h4>
+            <p class="review-text">
+                Excellent tour. Mewis knows how to captivate an audience and always keep it interesting.                    
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Christopher
+            </h4>
+            <p class="review-text">
+                A big thank you to Mewis, who provided a highly entertaining, informative and passionate tour in his own inimitable style.
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Indy
+            </h4>
+            <p class="review-text">
+                Perfect company outing for when you want to get to know Rotterdam in a fun way! Mewis has great communication skills and is great in getting everyone involved.
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Jaap
+            </h4>
+            <p class="review-text">
+                Lovely tour, which is not only very educational, but contains a lot of humor.
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Justin
+            </h4>
+            <p class="review-text">
+                Mewis is a public speaking pro! He kept his flow throughout the 3 hour tour, with all guests entertained and engaged. His stories were on point and his delivery exceptional. As a tour guide myself I have pretty high standards, but he gets my tick of approval and then some!
+            </p>
+        </div>
+
+        <div class="review">
+            <h4 class="reviewer-name">
+                Tobias
+            </h4>
+            <p class="review-text">
+                Mewis was easy to understand and hilarious to listen to, even in front of loud streets.
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Emma
+            </h4>
+            <p class="review-text">
+                Super fun walk with the wonderful Mewis. He's totally charming , knowledgeable and engaging. Totally recommend!                    
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Maite
+            </h4>
+            <p class="review-text">
+                Cool, funny, sharp, lots of energy, personal. I loved it!
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Taylor
+            </h4>
+            <p class="review-text">
+                Lovely experience!!! Great energy and great information!!!
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Michaela
+            </h4>
+            <p class="review-text">
+                Funny and interesting Information!
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Aleks
+            </h4>
+            <p class="review-text">
+                Great interactive experience!
+            </p>
+        </div>
+        <div class="review">
+            <h4 class="reviewer-name">
+                Lorenzo
+            </h4>
+            <p class="review-text">
+                Increíble , este hombre es un genio.
+            </p>
+        </div>
+        
+    </div>
+    <footer>
+        <h3>
+            Contact
+        </h3>
+        <p>
+            <a href="mailto:Mewistoursrotterdam@gmail.com">Mewistoursrotterdam@gmail.com</a> <br>
+            <a href="+31628072215">+31628072215</a> <br>
+            <a href="https://www.linkedin.com/in/mewis-breij-753923175/)">LinkedIn</a><br>
+        </p>
+    </footer>
+
 <script>
     function init_footprint(){
         const start_x = 100;
@@ -125,6 +268,24 @@
         //apply nx ny to elements
         //call new function with new parameters
     }   
+    function toggleLanguage(){
+        $(".english , .dutch").toggle()
+    }
+    const SCROLLTIMER = 16 * 1000
+    var SCROLLWIDTH = 2000
+    i=1
+    $(document).ready(function(){
+        scrollReviews()
+        window.setInterval(scrollReviews, SCROLLTIMER)
+        // $("#reviews").scroll(() => window.clearInterval())
+
+    })
+    function scrollReviews(){
+        SCROLLWIDTH *= -1
+        var animation = $("#reviews").animate({ scrollLeft: SCROLLWIDTH }, SCROLLTIMER);
+        $("#reviews").scroll(() => animation.stop())
+    }
+
 
 </script>
 </body>

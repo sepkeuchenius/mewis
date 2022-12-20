@@ -101,6 +101,7 @@ nav a {
     text-align: center;
     margin-left:100px;
     /* margin-top: 50px; */
+    margin:0 auto;
 }
 #skyline {
     margin: 40px 0;

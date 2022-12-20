@@ -19,12 +19,14 @@
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
-        /* height: auto; */
+        height: auto;   
+        margin:20px 0;
     }
     #public-speaking-rotterdam{
         /* background-image: url("public_speaking_mobile.jpg"); */
         background-position-y: bottom;
         height: fit-content;
+        color:black;
     }
     #public-speaking-rotterdam p{
         margin: 0;
@@ -44,12 +46,19 @@
     #reviews{
         padding:0;
     }
+    #mewis {
+        margin-bottom:30px;
+    }
     .right, .right h3, .right p {
         float:none;
         text-align: left;
     }
     .page h3{
         /* text-align: center; */
+    }
+    .review {
+        width:200px;
+        font-size:12px;
     }
 
 }

@@ -361,6 +361,9 @@
     $(document).ready(function(){
         scrollReviews()
         window.setInterval(scrollReviews, SCROLLTIMER)
+        if(window.location.hostame.includes(".nl")){
+            toggleLanguage()
+        }
         // $("#reviews").scroll(() => window.clearInterval())
 
     })

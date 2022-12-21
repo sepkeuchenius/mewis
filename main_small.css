@@ -28,7 +28,7 @@
         /* height: fit-content; */
         color:white;
         background-size: 140%;;
-        height:70vh;
+        height:453px;
         width:100vw;
         margin-left:-5px;
         border-radius:0;
@@ -41,7 +41,7 @@
     }
     #public-speaking-rotterdam p{
         margin: 0;
-        margin-top:calc(70vh - 280px);
+        margin-top:150px;
     }
     .page p {
         /* background-color: transparent; */

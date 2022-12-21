@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     main {
-        padding: 3%;
+        padding: 5px;
     }
     h1{
         font-size: 50px;
@@ -25,14 +25,23 @@
     #public-speaking-rotterdam{
         /* background-image: url("public_speaking_mobile.jpg"); */
         background-position-y: bottom;
-        height: fit-content;
-        color:black;
+        /* height: fit-content; */
+        color:white;
         background-size: 140%;;
+        height:70vh;
+        width:100vw;
+        margin-left:-5px;
+        border-radius:0;
+        padding:5px 10px;
+        padding-top:10px;
 
+    }
+    #public-speaking-rotterdam h3 {
+        text-align: center;
     }
     #public-speaking-rotterdam p{
         margin: 0;
-        margin-top:150px;
+        margin-top:calc(70vh - 280px);
     }
     .page p {
         /* background-color: transparent; */
@@ -44,6 +53,10 @@
     }
     #subhero{
         margin-left:0;
+        padding:0 10px;
+    }
+    .hero {
+        margin-top:50px;
     }
     #reviews{
         padding:0;
@@ -54,6 +67,9 @@
     .right, .right h3, .right p {
         float:none;
         text-align: left;
+    }
+    .right h3 {
+        text-align: right;
     }
     .page h3{
         /* text-align: center; */
@@ -68,5 +84,17 @@
     }
     #book-me textarea{
         width:80%;
+    }
+    #pages {
+        margin:0;
+    }
+    #public-title-2 {
+        display: block;
+        /* margin-left:50px; */
+        font-style: italic;
+    }
+    #public-title-3 {
+        display: block;
+        /* margin-left:100px; */
     }
 }

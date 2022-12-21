@@ -60,10 +60,11 @@ nav a {
    margin: 3px; 
 }
 #pages {
-    margin-top: 100px;
     display: block;
     max-width: 1200px;
     display: grid;
+    margin:0 auto;
+    margin-top: 50px;
 }
 .page {
     margin: 40px 0;
@@ -99,9 +100,11 @@ nav a {
     max-width:800px;
     font-weight: bold;
     text-align: center;
-    margin-left:100px;
-    /* margin-top: 50px; */
+
     margin:0 auto;
+
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 #skyline {
     margin: 40px 0;
@@ -114,7 +117,7 @@ nav a {
 }
 .page p {
     font-weight: 500;
-    font-size:15px;
+    font-size:18px;
     padding:20px;
     /* background-color: #ffc65e; */
     /* background-color: #f6f2d4; */

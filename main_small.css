@@ -97,4 +97,10 @@
         display: block;
         /* margin-left:100px; */
     }
+    .reviewer-name {
+        margin:5px;
+    }
+    .rating {
+        margin:3px;
+    }
 }

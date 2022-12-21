@@ -27,6 +27,8 @@
         background-position-y: bottom;
         height: fit-content;
         color:black;
+        background-size: 140%;;
+
     }
     #public-speaking-rotterdam p{
         margin: 0;

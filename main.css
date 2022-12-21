@@ -204,3 +204,43 @@ footer{
 .smaller {
     font-size:0.5em;
 }
+#book-me{
+    width:550px;
+    /* height:80vh; */
+    background:white;
+    position:fixed;
+    top:10vh;
+    left:calc(50vw - 275px);
+    display:none;
+    padding:0 30px;
+    box-sizing: border-box;
+    border-radius:30px;
+    background-color: #bad4ec;
+    text-align: center;
+}
+#book-me input, #book-me textarea, #book-me button {
+    display:block;
+    margin:30px auto;
+    font-family: inherit;
+    border-radius:15px;
+    padding:5px 20px;
+    border:none;
+    font-size:18px;
+}
+
+#book-me #book-me-submit {
+    background-color: rgb(148 188 225);
+    margin-left:5px;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 20%)
+
+}
+#book-me-buttons {
+    display: inline-block;
+    margin:0 auto;
+    text-align: center;
+    width:100%;
+}
+#book-me-buttons button {
+    display:inline-block;
+    margin-top:0;
+}

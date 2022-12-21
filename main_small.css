@@ -60,5 +60,11 @@
         width:200px;
         font-size:12px;
     }
-
+    #book-me {
+        width:90%;
+        left:5%;
+    }
+    #book-me textarea{
+        width:80%;
+    }
 }

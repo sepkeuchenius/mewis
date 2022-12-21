@@ -41,7 +41,7 @@
         </p>
         <br>
         <div style="text-align: center;width: 100%;">
-        <button class="active-button">
+        <button class="active-button" onclick="showBookMe()" style="box-shadow: 0px 3px 4px rgb(0 0 0 / 20%)">
             <span class="english">
                 Book Me
             </span>
@@ -53,7 +53,6 @@
         <br>
 
         <div id="pages">
-            <!-- <img src="public sspeaking.jpg" id="speaking"> -->
 
             <div class="page left" id="public-speaking-rotterdam">
                 <h3>
@@ -245,7 +244,77 @@
         </p>
     </footer>
 
+    <div id="book-me">      
+        <h3><span class="english">Book me</span><span class="dutch">Boek mij</span></h3>
+        <p>
+            <span class="english">
+                Leave your details and your request, I will get back to you as soon as I can!
+            </span>
+            <span class="dutch">
+                Laat je gegevens en je aanvraag achter, dan neem ik zo snel mogelijk contact op!
+            </span>
+        </p>
+        <input type="text" name="user" placeholder="Name" id="user-name">
+        <input type="text" name="number" placeholder="Tel. Nr." id="phone-number">
+        <textarea placeholder="Specify your request" name="comments" id="comments" cols="40" rows="6"></textarea>
+        <div id="book-me-buttons">
+            <button id="book-me-cancel" onclick="hideBookMe()">Cancel</button>
+            <button id="book-me-submit" onclick="bookMe()">Send</button>
+        </div>
+        </div>
+
 <script>
+    function hideBookMe(){
+        $("#book-me").fadeOut()
+        $('main').css("filter", "none")
+    }
+    function showBookMe(){
+        $('#book-me').fadeIn()
+        $('main').css("filter", "blur(3px)")
+    }
+    function bookMe(){
+        if (!$("#user-name").val()){
+            $("#user-name").css('border', '1px solid red')
+            $("#user-name").on("input", () => {
+                $("#user-name").css('border', 'none')
+            })
+        } 
+        else if(!$("#phone-number").val()){
+            $("#phone-number").css('border', '1px solid red')
+            $("#phone-number").on("input", () => {
+                $("#phone-number").css('border', 'none')
+            })
+        }
+        else if(!$("#comments").val()){
+            $("#comments").css('border', '1px solid red')
+            $("#comments").on("input", () => {
+                $("#comments").css('border', 'none')
+            })
+        }
+        else{
+            $.ajax({
+                "url": "https://eomwxkdtf4jhlh3.m.pipedream.net",
+                "data": {
+                    "username": $("#user-name").val(),
+                    "phonenumber":$("#phone-number").val(),
+                    "comments":$("#comments").val()
+                }
+            }).done(()=>{
+                $('#book-me *').hide()
+                $('#book-me').prepend($('<img>').attr('src', "done.svg").css("width","100px"))
+                window.setTimeout(()=>{
+                    $("#book-me").fadeOut(1, ()=>{
+                        $('main').css("filter", "none")
+                        $('#book-me-buttons, #book-me-cancel').show()
+                    })
+                
+                },1000)
+                
+            })
+           
+        }
+
+    }
     function init_footprint(){
         const start_x = 100;
         const start_y = 100;

@@ -198,3 +198,6 @@ footer{
     margin:0;
     margin-bottom:20px;
 }
+.smaller {
+    font-size:0.5em;
+}

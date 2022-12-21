@@ -53,7 +53,6 @@
         <br>
 
         <div id="pages">
-            <!-- <img src="public sspeaking.jpg" id="speaking"> -->
 
             <div class="page left" id="public-speaking-rotterdam">
                 <h3>
@@ -245,7 +244,28 @@
         </p>
     </footer>
 
+    <div id="book-me">
+        <input type="text" name="user" placeholder="Naam" id="user-name">
+        <input type="text" name="number" placeholder="Telefoonnummer" id="phone-number">
+        <textarea placeholder="Uw aanvraag" name="comments" id="comments"></textarea>
+        <button onclick="bookMe()">Stuur</button>
+    </div>
+
 <script>
+    function showBookMe(){
+        $('#book-me').show()
+    }
+    function bookMe(){
+        $.ajax({
+            "url": "https://eomwxkdtf4jhlh3.m.pipedream.net",
+            "data": {
+                "username": $("#user-name").val(),
+                "phonenumber":$("#phone-number").val(),
+                "comments":$("#comments").val()
+            }
+        })
+        $("#book-me").hide()
+    }
     function init_footprint(){
         const start_x = 100;
         const start_y = 100;

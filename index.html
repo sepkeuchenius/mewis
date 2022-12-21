@@ -300,8 +300,16 @@
                     "comments":$("#comments").val()
                 }
             }).done(()=>{
-                $("#book-me").hide()
-                $('main').css("filter", "none")
+                $('#book-me *').hide()
+                $('#book-me').prepend($('<img>').attr('src', "done.svg").css("width","100px"))
+                window.setTimeout(()=>{
+                    $("#book-me").fadeOut(1, ()=>{
+                        $('main').css("filter", "none")
+                        $('#book-me-buttons, #book-me-cancel').show()
+                    })
+                
+                },1000)
+                
             })
            
         }

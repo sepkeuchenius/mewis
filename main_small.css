@@ -9,7 +9,7 @@
         text-align: center;
         width:100%;
         left:0;
-        background-color: inherit;
+        background-color: #7195b3;
         box-sizing: border-box;
         top: 0;
         padding-top: 12px;
@@ -21,29 +21,7 @@
         padding: 10px;
         margin:20px 0;
     }
-    #public-speaking-rotterdam{
-        /* background-image: url("public_speaking_mobile.jpg"); */
-        background-position-y: bottom;
-        /* height: fit-content; */
-        color:white;
-        background-size: 150%;;
-        height:600px;
-        width:100vw;
-        margin-left:-5px;
-        border-radius:0;
-        padding:5px 10px;
-        padding-top:10px;
-
-    }
-    #public-speaking-rotterdam h3 {
-        /* text-align: center; */
-        margin-top:380px;
-        margin-bottom:10px;
-    }
-    #public-speaking-rotterdam p{
-        margin: 0;
-        /* margin-top:150px */
-    }
+    
     .page p {
         /* background-color: transparent; */
         font-size:13px;
@@ -58,6 +36,8 @@
     }
     .hero {
         margin-top:50px;
+        padding:100px 0;
+        height:500px;
     }
     #reviews{
         padding:0;
@@ -69,11 +49,8 @@
         float:none;
         text-align: left;
     }
-    .right h3 {
-        text-align: right;
-    }
     .page h3{
-        /* text-align: center; */
+        text-align: center;
     }
     .review {
         width:200px;
@@ -88,15 +65,6 @@
     }
     #pages {
         margin:0;
-    }
-    #public-title-2 {
-        /* display: block; */
-        /* margin-left:50px; */
-        font-style: italic;
-    }
-    #public-title-3 {
-        /* display: block; */
-        /* margin-left:100px; */
     }
     .reviewer-name {
         margin:5px;

@@ -4,6 +4,8 @@
 body{
     font-family: 'Raleway', sans-serif;
     background-color: rgb(147 188 225);
+    background: linear-gradient(rgb(147 188 225 / 29%) , rgb(147 188 225));
+    background: linear-gradient(rgb(99 131 159) , rgb(147 188 225));
     color:#343333;
     margin:0;
 }
@@ -13,15 +15,25 @@ h1{
     margin:0;
 }
 .hero {
-    display: flex;
+    position:relative;  
+    display: block;
     justify-content: center;
     width:100%;
     padding-top:50px;
     text-align: center;
+    height:670px;
+    box-sizing: border-box;
+    padding:130px 250px;
+    background: url('mewis.png') 50% 60%/cover no-repeat;
+    -webkit-text-stroke-width:3px;
+    -webkit-text-stroke-color: #94bce1;
+
+    /* box-shadow: 0px 3px 4px rgb(0 0 0 / 20%); */
+    /* text-decoration: ; */
 }
 main {
     width: 100%;
-    padding:100px 100px 0px 100px;    
+    padding:20px 100px 0px 100px;    
     box-sizing: border-box;
 }
 .foot {
@@ -64,7 +76,6 @@ nav a {
     max-width: 1200px;
     display: grid;
     margin:0 auto;
-    margin-top: 50px;
 }
 .page {
     margin: 40px 0;
@@ -97,16 +108,13 @@ nav a {
     float:right
 }
 #subhero {
-    /* color:white; */
+    color:white;
     font-size:20px;
     max-width:800px;
     font-weight: bold;
     text-align: center;
+    margin:20px auto;
 
-    margin:0 auto;
-
-    margin-top: 50px;
-    margin-bottom:50px;
 }
 #skyline {
     margin: 40px 0;
@@ -135,18 +143,6 @@ nav a {
     z-index:-1;
     filter: grayscale(1)
 
-}
-#public-speaking-rotterdam {
-    background-image: url("mewis.png");
-    background-size: 100% auto;
-    background-position: 0 70%;
-    color:white;
-    height: auto;
-    /* padding-top:200px; */
-    
-}
-#public-speaking-rotterdam p{
-    margin-top:300px;
 }
 #mewis {
     margin-bottom:150px;

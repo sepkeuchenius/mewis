@@ -83,4 +83,7 @@
     #public-title-2{
         display:block;
     }
+    .language-button {
+        vertical-align: -40%;;
+    }
 }

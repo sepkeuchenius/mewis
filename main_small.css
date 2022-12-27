@@ -72,4 +72,8 @@
     .rating {
         margin:3px;
     }
+
+    #foot {
+        margin:0 auto;
+    }
 }

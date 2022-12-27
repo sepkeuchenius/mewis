@@ -1,6 +1,10 @@
 * {
     background-repeat: no-repeat;
 }
+#title {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 body{
     font-family: 'Raleway', sans-serif;
     background-color: rgb(147 188 225);
@@ -64,12 +68,14 @@ nav{
     right:20px;
 }
 nav a {
-   color:inherit;
-   outline:none;
-   text-decoration: none;
-   border-bottom: 3px solid white;
-   padding: 3px 0;
-   margin: 3px; 
+    color: white;
+    outline: none;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    padding: 3px 0;
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold; 
 }
 #pages {
     display: block;

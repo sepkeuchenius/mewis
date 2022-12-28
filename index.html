@@ -367,7 +367,7 @@
     $(document).ready(function(){
         scrollReviews()
         window.setInterval(scrollReviews, SCROLLTIMER)
-        if(window.location.hostame.includes(".nl") || window.location.search.includes("nl")){
+        if(window.location.hostname.includes(".nl") || window.location.search.includes("nl")){
             toggleLanguage()
         }
         // $("#reviews").scroll(() => window.clearInterval())

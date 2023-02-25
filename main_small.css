@@ -26,18 +26,23 @@
         /* background-color: transparent; */
         font-size:13px;
         /* padding:0; */
+        padding: 0px calc(50% - 200px);
+        text-align: center;;
+
     }
     footer {
         padding-left:30px;
+        height:auto;
     }
     #subhero{
         margin-left:0;
         padding:0 10px;
         font-weight: normal;
+        font-size:18px;
     }
     .hero {
         padding:100px 0;
-        height:500px;
+        height:100px;
     }
     #reviews{
         padding:0;
@@ -64,7 +69,9 @@
         width:80%;
     }
     #pages {
-        margin:0;
+        margin-bottom:60px;
+        margin-top:0px;
+        display:inline-block;
     }
     .reviewer-name {
         margin:5px;
@@ -85,5 +92,20 @@
     }
     .language-button {
         vertical-align: -40%;
+    }
+    #i-m-mewis{
+        margin:0;
+        width:100%;
+        padding:20px;
+        box-sizing: border-box;
+        margin-top:100px;
+        margin-bottom:100px;
+        padding:100px 10px;
+    }
+    #i-m-mewis p {
+        font-size:13px;
+    }
+    #skyline {
+        margin-top:60px;
     }
 }

@@ -104,6 +104,8 @@
     }
     #i-m-mewis p {
         font-size:13px;
+        padding: 0px calc(50% - 200px);
+
     }
     #skyline {
         margin-top:60px;

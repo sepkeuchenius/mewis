@@ -9,11 +9,18 @@
         text-align: center;
         width:100%;
         left:0;
-        background-color: #7195b3;
+        /* background-color: #7195b3; */
         box-sizing: border-box;
         top: 0;
         padding-top: 12px;
         padding-bottom: 16px;
+    }
+    nav a {
+        border-bottom: none;
+        padding: 6px;
+        margin: 3px;
+        background: #759cba;
+        border-radius: 7px;
     }
     .page {
         width: 100%;
@@ -39,6 +46,8 @@
         padding:0 10px;
         font-weight: normal;
         font-size:18px;
+        padding: 0px calc(50% - 200px);
+        margin:60px 0;
     }
     .hero {
         padding:100px 0;
@@ -92,6 +101,7 @@
     }
     .language-button {
         vertical-align: -40%;
+        width:38px;
     }
     #i-m-mewis{
         margin:0;
@@ -112,4 +122,8 @@
         width:90%;
         margin-left:5%;
     }
+    #title {
+        margin:70px 0;
+    }
 }
+

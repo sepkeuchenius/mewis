@@ -81,6 +81,7 @@ nav a {
     margin: 3px;
     font-size: 20px;
     font-weight: bold; 
+    cursor:pointer;
 }
 #pages {
     max-width: 1200px;

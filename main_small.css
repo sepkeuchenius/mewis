@@ -125,5 +125,13 @@
     #title {
         margin:70px 0;
     }
+    #pricing-content{
+        margin:0;
+        font-size:18px;
+        width:auto;
+    }
+    td{
+        padding:0;
+    }
 }
 

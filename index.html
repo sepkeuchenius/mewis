@@ -19,14 +19,78 @@
         <img src="dutch.svg" onclick="toggleLanguage()" class="english language-button">
         <img src="english.svg" onclick="toggleLanguage()" class="dutch language-button">
 
-        <a class="page-link" href="#reviews">Reviews</a>
+        <a class="page-link" href="#reviews" onclick="hidePricing()">Reviews</a>
         <a class="page-link" onclick="showBookMe()">Contact</a>
         <a class="page-link" onclick="showPricing()"><span class="english">Pricing</span><span class="dutch">Prijzen</span></a>
     </nav>
     <div class="hero">
         
     </div>
-    <main>
+    <main id="pricing" style="display:none;padding:30px;position:relative">
+        <img src="back.svg" onclick="hidePricing()" style="position: absolute;top:20px;left:20px;cursor:pointer;width:30px;">
+        <h1>
+            <span class="dutch">
+                Prijzen
+            </span>
+            <span class="english">
+                Pricing
+            </span>
+        </h1>
+        <div id="pricing-content">
+        <p class="dutch">
+            <table class="dutch">
+                <tbody>
+                    <tr>
+                        <td>The Walk (2,5 uur)</td>
+                        <td>€ 699, -</td>
+                    </tr>
+                    <tr>
+                        <td>Public speaking keynote -<br> op locatie (30 min.- 2-hour) </td>
+                        <td>€ 499, - tot € 999, - </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p class="dutch">
+            Neem contact op om de mogelijkheden te bespreken<br>
+            <a href="mailto:mewis@publicspeakingwalk.com">mewis@publicspeakingwalk.com</a> <br>
+            <br><br>
+            +31628072215 
+            <br><br>
+            Uitzonderingen kunnen worden gemaakt voor organisaties in de publieke sector of non-profitorganisaties.
+            <br>
+            <br>
+        </p>      
+        <p class="english">
+            <table class="english">
+                <tbody>
+                    <tr>
+                        <td>The Walk (2,5 uur)</td>
+                        <td>€ 699, -</td>
+                    </tr>
+                    <tr>
+                        <td>Public speaking keynote -<br> on location (30 min.- 2-hour) </td>
+                        <td>€ 499, - to € 999, - </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p class="english">
+            Get in touch to discuss the options <br>
+            <a href="mailto:mewis@publicspeakingwalk.com">mewis@publicspeakingwalk.com</a> <br>
+            <br>
+            +31628072215 
+            <br>
+            <br>
+
+            Exceptions can be made for organizations in the public sector or non profit organizations.
+            <br>
+            <br>
+        </p>   
+            
+    </div>
+    </main>
+    <main id="main">
         
         <h1 id="title">
             Public Speaking Walk 
@@ -119,151 +183,162 @@
               
         </div>
     </main>
-    <h3 style="text-align: center;">
-        Reviews
-    </h3>
-    <div id="reviews">
-        
-        <div class="review">
-            <h4 class="reviewer-name">
-                Sonia
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Great speaker, which has a funny way to entertain the audience. Despite the cold weather, the time past fast as we were captivate by his stories.
-            </p>
-        </div>
+    <div id="reviews-container">
+        <h3 style="text-align: center;">
+            Reviews
+        </h3>
+        <div id="reviews">
+            
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Alies
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Mewis kan op vermakelijke wijze over serieuze onderwerpen college geven. Mewis houdt een groep mensen met verschillende achtergronden lang geboeid, en spreekt inspirerend over psychologie, zijn eigen ervaring en het leven.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Aishameriane
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Mewis has true passion for public speaking and engage the group in a very nice walk through Rotterdam.
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Sonia
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Great speaker, which has a funny way to entertain the audience. Despite the cold weather, the time past fast as we were captivate by his stories.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Sonny
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Excellent tour. Mewis knows how to captivate an audience and always keep it interesting.                    
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Aishameriane
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Mewis has true passion for public speaking and engage the group in a very nice walk through Rotterdam.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Christopher
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                A big thank you to Mewis, who provided a highly entertaining, informative and passionate tour in his own inimitable style.
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Sonny
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Excellent tour. Mewis knows how to captivate an audience and always keep it interesting.                    
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Indy
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Perfect company outing for when you want to get to know Rotterdam in a fun way! Mewis has great communication skills and is great in getting everyone involved.
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Christopher
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    A big thank you to Mewis, who provided a highly entertaining, informative and passionate tour in his own inimitable style.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Jaap
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Lovely tour, which is not only very educational, but contains a lot of humor.
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Indy
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Perfect company outing for when you want to get to know Rotterdam in a fun way! Mewis has great communication skills and is great in getting everyone involved.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Justin
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Mewis is a public speaking pro! He kept his flow throughout the 3 hour tour, with all guests entertained and engaged. His stories were on point and his delivery exceptional. As a tour guide myself I have pretty high standards, but he gets my tick of approval and then some!
-            </p>
-        </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Jaap
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Lovely tour, which is not only very educational, but contains a lot of humor.
+                </p>
+            </div>
 
-        <div class="review">
-            <h4 class="reviewer-name">
-                Tobias
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Mewis was easy to understand and hilarious to listen to, even in front of loud streets.
-            </p>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Justin
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Mewis is a public speaking pro! He kept his flow throughout the 3 hour tour, with all guests entertained and engaged. His stories were on point and his delivery exceptional. As a tour guide myself I have pretty high standards, but he gets my tick of approval and then some!
+                </p>
+            </div>
+
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Tobias
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Mewis was easy to understand and hilarious to listen to, even in front of loud streets.
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Emma
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Super fun walk with the wonderful Mewis. He's totally charming , knowledgeable and engaging. Totally recommend!                    
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Maite
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Cool, funny, sharp, lots of energy, personal. I loved it!
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Taylor
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Lovely experience!!! Great energy and great information!!!
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Michaela
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Funny and interesting Information!
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Aleks
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Great interactive experience!
+                </p>
+            </div>
+            <div class="review">
+                <h4 class="reviewer-name">
+                    Lorenzo
+                </h4>
+                <p class="rating">★★★★★</p>
+                <p class="review-text">
+                    Increíble , este hombre es un genio.
+                </p>
+            </div>
+            
         </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Emma
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Super fun walk with the wonderful Mewis. He's totally charming , knowledgeable and engaging. Totally recommend!                    
-            </p>
-        </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Maite
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Cool, funny, sharp, lots of energy, personal. I loved it!
-            </p>
-        </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Taylor
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Lovely experience!!! Great energy and great information!!!
-            </p>
-        </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Michaela
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Funny and interesting Information!
-            </p>
-        </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Aleks
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Great interactive experience!
-            </p>
-        </div>
-        <div class="review">
-            <h4 class="reviewer-name">
-                Lorenzo
-            </h4>
-            <p class="rating">★★★★★</p>
-            <p class="review-text">
-                Increíble , este hombre es un genio.
-            </p>
-        </div>
-        
     </div>
     <footer id="contact">
         <p>
-            <a href="mailto:Mewistoursrotterdam@gmail.com">Mewistoursrotterdam@gmail.com</a> <br>
+            <a href="mailto:mewis@publicspeakingwalk.com">mewis@publicspeakingwalk.com</a> <br>
             <a href="+31628072215">+31628072215</a> <br>
-            <a href="https://www.linkedin.com/in/mewis-breij-753923175/)">LinkedIn</a><br>
         </p>
     </footer>
 
@@ -383,7 +458,16 @@
         $("#reviews").scroll(() => animation.stop())
     }
 
-
+    function showPricing(){
+        $('#main').hide();
+        $('#reviews-container').hide();
+        $('#pricing').show();
+    }
+    function hidePricing(){
+        $('#main').show();
+        $('#reviews-container').show();
+        $('#pricing').hide();
+    }
 </script>
 </body>
 </html>

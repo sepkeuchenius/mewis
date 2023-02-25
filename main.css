@@ -282,3 +282,27 @@ footer{
     text-decoration: none;
     color:white;
 }
+#pricing h1{
+    text-align: center;
+    margin-top:50px;
+
+}
+table {
+    margin-top:100px;
+    margin-bottom:100px;
+}
+td{
+    padding:10px 0;
+    padding-right:70px;
+}
+tr{
+    height:30px;
+}
+#pricing-content {
+    width:50%;
+    margin-left:25%;
+    font-size: 20px;;
+    color:white;
+    height:auto;
+
+}

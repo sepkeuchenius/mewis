@@ -33,7 +33,7 @@ h1{
     height:250px;
     box-sizing: border-box;
     padding:130px 250px;
-    background: url('mewis.png') 50% 60%/cover no-repeat;
+    background: url('mewis-semi-blurred.png') 50% 60%/cover no-repeat;
     -webkit-text-stroke-width:3px;
     -webkit-text-stroke-color: #94bce1;
 

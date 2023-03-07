@@ -41,6 +41,14 @@
         padding-left:30px;
         height:auto;
     }
+    #subsubhero {
+        margin-left:0;
+        padding:0 10px;
+        font-weight: normal;
+        font-size:13px;
+        padding: 0px calc(50% - 200px);
+        margin:60px 0;
+    }
     #subhero{
         margin-left:0;
         padding:0 10px;

@@ -307,3 +307,11 @@ tr{
     height:auto;
 
 }
+#subsubhero{
+    color: white;
+    font-size: 15px;
+    max-width: 751px;
+    font-weight: normal;
+    text-align: center;
+    margin: 37px auto;
+}

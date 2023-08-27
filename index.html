@@ -21,16 +21,62 @@
     <nav>
         <img src="dutch.svg" onclick="toggleLanguage()" class="english language-button">
         <img src="english.svg" onclick="toggleLanguage()" class="dutch language-button">
-
-        <a class="page-link" href="#reviews" onclick="hidePricing()">Reviews</a>
+        <div class="dropdown">
+            <a class="dropbtn page-link">Options</a>
+            <div class="dropdown-content">
+              <a href="#" class="page-link" onclick="show('the-walk')">The Walk</a>
+              <a href="#" class="page-link" onclick="show('the-workshop')">The Workshop</a>
+            </div>
+          </div>
+        <a class="page-link" href="#reviews" onclick="show('main')">Reviews</a>
         <a class="page-link" onclick="showBookMe()">Contact</a>
-        <a class="page-link" onclick="showPricing()"><span class="english">Pricing</span><span class="dutch">Prijzen</span></a>
+        <a class="page-link" onclick="show('pricing')"><span class="english">Pricing</span><span class="dutch">Prijzen</span></a>
     </nav>
     <div class="hero">
         
     </div>
+    <main id="the-workshop" style="display: none;">
+        <img src="back.svg" onclick="show('main')" style="position: absolute;top:20px;left:20px;cursor:pointer;width:30px;">
+        <h1>
+            <span class="dutch">
+                The Workshop
+            </span>
+            <span class="english">
+                De Workshop
+            </span>
+        </h1>
+        <div id="the-workshop-content">
+            <p class="dutch">
+                @mewis nederlandse tekst voor de workshop
+            </p>
+            
+            <p class="english">
+                @mewis engelse tekst voor de workshop
+            </p>
+        </div>
+    </main>
+    <main id="the-walk"  style="display: none;">
+        <img src="back.svg" onclick="show('main')" style="position: absolute;top:20px;left:20px;cursor:pointer;width:30px;">
+        <h1>
+            <span class="dutch">
+                The Walk
+            </span>
+            <span class="english">
+                De Walk
+            </span>
+        </h1>
+        <div id="the-walk-content">
+            <p class="dutch">
+                @mewis nederlandse tekst voor de walk
+            </p>
+            
+            <p class="english">
+                @mewis engelse tekst voor de walk
+            </p>
+        </div>
+    </main>
     <main id="pricing" style="display:none;padding:30px;position:relative">
-        <img src="back.svg" onclick="hidePricing()" style="position: absolute;top:20px;left:20px;cursor:pointer;width:30px;">
+        <img src="back.svg" onclick="show('main')" style="position: absolute;top:20px;left:20px;cursor:pointer;width:30px;">
         <h1>
             <span class="dutch">
                 Prijzen
@@ -44,11 +90,11 @@
             <table class="dutch">
                 <tbody>
                     <tr>
-                        <td>The Walk (2 uur)</td>
+                        <td><a class="inline-link" onclick='show("the-walk")'>The Walk</a> (2 uur)</td>
                         <td>€ 899, -</td>
                     </tr>
                     <tr>
-                        <td>Public speaking workshop -<br> op locatie (90 min.- 120 min.) </td>
+                        <td>Public speaking <a class="inline-link" onclick='show("the-workshop")'>The Workshop</a> -<br> op locatie (90 min.- 120 min.) </td>
                         <td>€ 699, - tot € 999, - </td>
                     </tr>
                 </tbody>
@@ -68,11 +114,11 @@
             <table class="english">
                 <tbody>
                     <tr>
-                        <td>The Walk (2 uur)</td>
+                        <td><a class="inline-link" onclick='show("the-walk")'>The Walk</a> (2 uur)</td>
                         <td>€ 899, -</td>
                     </tr>
                     <tr>
-                        <td>Public speaking workshop -<br> on location (90 min.- 120 min.) </td>
+                        <td>Public speaking <a class="inline-link" onclick='show("the-workshop")'>The Workshop</a> -<br> on location (90 min.- 120 min.) </td>
                         <td>€ 699, - to € 999, - </td>
                     </tr>
                 </tbody>
@@ -110,10 +156,10 @@
         </p>
         <p id="subsubhero">
             <span class="english">
-             In most cities I'm currently only available for 'The Workshop': an inside demonstrative public speaking masterclass on location.
+             In most cities I'm currently only available for <a class="inline-link" onclick='show("the-workshop")'>The Workshop</a>: an inside demonstrative public speaking masterclass on location.
             </span>
             <span class="dutch">
-                In de meeste steden ben ik momenteel alleen beschikbaar voor 'The Workshop': een demonstratieve public speaking masterclass op locatie.
+                In de meeste steden ben ik momenteel alleen beschikbaar voor <a class="inline-link" onclick='show("the-workshop")'>The Workshop</a>: een demonstratieve public speaking masterclass op locatie.
             </span>
         </p>
         <br>
@@ -158,13 +204,13 @@
 
                 <p>
                     <span class="english">
-                        I, Mewis Breij, combined research on communication, psychology and neuroscience into this interactive event. In 'The Walk' I will speak about speaking while walking you through your city. I will walk you through topics like voice, body language, authenticity, storytelling and contrast.
-                        So no: not a sightseeing tour. 'The Walk' uses the city as an example. In 'The Workshop' we will discuss the same topics, but then on location.
+                        I, Mewis Breij, combined research on communication, psychology and neuroscience into this interactive event. In <a class="inline-link" onclick='show("the-walk")'>The Walk</a> I will speak about speaking while walking you through your city. I will walk you through topics like voice, body language, authenticity, storytelling and contrast.
+                        So no: not a sightseeing tour. <a class="inline-link" onclick='show("the-walk")'>The Walk</a> uses the city as an example. In <a class="inline-link" onclick='show("the-workshop")'>The Workshop</a> we will discuss the same topics, but then on location.
 
                     </span>
                     <span class="dutch">
-                        Ik, Mewis Breij, heb onderzoek uit de communicatiewetenschappen, de psychologie en de neurowetenschap gecombineerd tot een interactief evenement. In 'The Walk' zal ik spreken over spreken terwijl wij van plek naar plek in de stad lopen.  Het zal gaan over stem, lichaamstaal, authenticiteit, storytelling en contrast.
-                        Dus nee: geen sightseeingtour. 'The Walk' gebruikt de stad als voorbeeld. In 'De Workshop' zal hetzelfde besproken worden, maar dan op locatie.
+                        Ik, Mewis Breij, heb onderzoek uit de communicatiewetenschappen, de psychologie en de neurowetenschap gecombineerd tot een interactief evenement. In <a class="inline-link" onclick='show("the-walk")'>The Walk</a> zal ik spreken over spreken terwijl wij van plek naar plek in de stad lopen.  Het zal gaan over stem, lichaamstaal, authenticiteit, storytelling en contrast.
+                        Dus nee: geen sightseeingtour. <a class="inline-link" onclick='show("the-walk")'>The Walk</a> gebruikt de stad als voorbeeld. In 'De Workshop' zal hetzelfde besproken worden, maar dan op locatie.
                     </span>
                 </p>
             </div>
@@ -493,16 +539,16 @@
         var animation = $("#reviews").animate({ scrollLeft: SCROLLWIDTH }, SCROLLTIMER);
         $("#reviews").scroll(() => animation.stop())
     }
-
-    function showPricing(){
-        $('#main').hide();
-        $('#reviews-container').hide();
-        $('#pricing').show();
-    }
-    function hidePricing(){
-        $('#main').show();
-        $('#reviews-container').show();
-        $('#pricing').hide();
+    function show(page){
+        const pages = ["main", "reviews-container", "pricing", "the-walk", "the-workshop"] 
+        for(var other_page of pages){
+            $("#" + other_page).hide()
+        }
+        $("#" + page).show()
+        if(page == 'main'){
+            $('#reviews-container').show()
+        }
+        
     }
 </script>
 </body>

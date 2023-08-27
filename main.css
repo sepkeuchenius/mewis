@@ -283,10 +283,12 @@ footer{
     text-decoration: none;
     color:white;
 }
-#pricing h1{
+#pricing, #the-walk, #the-workshop {
+    position: relative;
+}
+#pricing h1 , #the-walk h1 , #the-workshop h1{
     text-align: center;
     margin-top:50px;
-
 }
 table {
     margin-top:100px;
@@ -299,13 +301,13 @@ td{
 tr{
     height:30px;
 }
-#pricing-content {
+#pricing-content , #the-walk-content , #the-workshop-content {
     width:50%;
     margin-left:25%;
     font-size: 20px;;
     color:white;
     height:auto;
-
+    min-height: 300px;
 }
 #subsubhero{
     color: white;
@@ -315,3 +317,42 @@ tr{
     text-align: center;
     margin: 37px auto;
 }
+
+/* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top:4px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    text-decoration: none;
+    display: block;
+    font-size:15px;
+    padding:7px;
+    font-weight: lighter;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .page-link:hover {border-color: orange;}
+  
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  .inline-link {
+    color:orange;
+    cursor:pointer;
+    text-decoration: underline;
+  }
